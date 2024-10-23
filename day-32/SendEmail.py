@@ -3,8 +3,8 @@ import pandas
 import random
 import smtplib
 
-MY_EMAIL = "samin.mahmud18@gmail.com"
-MY_PASSWORD = "acsp lcfv ataw lrku"
+MY_EMAIL = "samin@gmail.com"
+MY_PASSWORD = "password"
 
 random_num = random.randint(1, 3)
 random_letter = f"letter_{random_num}.txt"
