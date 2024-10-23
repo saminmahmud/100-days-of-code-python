@@ -3,7 +3,7 @@ import pandas
 import random
 import smtplib
 
-MY_EMAIL = "samin@gmail.com"
+MY_EMAIL = "phillipaipython@outlook.com"
 MY_PASSWORD = "password"
 
 random_num = random.randint(1, 3)
@@ -25,7 +25,7 @@ if month_day in birthdays_dict:
     with open(f"./letter_templates/{random_letter}", "w") as file:
         file.write(letter_data)
 
-    with smtplib.SMTP("smtp.gmail.com") as connection:
+    with smtplib.SMTP("smtp.outlook.com") as connection:
         connection.starttls()
         connection.login(MY_EMAIL, MY_PASSWORD)
         connection.sendmail(
